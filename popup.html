@@ -1,0 +1,41 @@
+<html>
+<head>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="lib/d3/d3.v2.min.js"></script>
+    <link type="text/css" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/smoothness/ui.all.css" rel="stylesheet">
+    <script type="text/javascript" src="settings.js"></script>
+    <script type="text/javascript" src="demographics.js"></script>
+    <script type="text/javascript" src="statistics.js"></script>
+    <script type="text/javascript" src="logic.js"></script>
+    <script type="text/javascript" src="popup.js"></script>
+    <link type="text/css" href="style.css" rel="stylesheet">
+    <title class='title'>PrivacyBucket</title>
+</head>
+
+<body>
+	<p id="title">PrivacyBucket</p>
+	<div id="app" role="main">
+		<!-- Changed for Price of Free -->
+		<div id="tracker-tabs"></div>
+		<div id="report-pane" class="ui-helper-clearfix">
+			<div id="tracker-image"><a href="" target="_blank"><img></a></div>
+			<h2 id="tracker-title"></h2>
+			<div id="view-tabs">
+				<ul>
+					<li><a href="#tabs-default">Overview</a></li>
+					<li><a href="#tabs-details">Details</a></li>`
+				</ul>
+				<div id="tabs-default">
+<!--				You've generated an estimated from <span id="support-count"></span> observation(s): -->
+				Your visits have generated an estimated total revenue from ad sales of:
+				<h2 id="publisher-price"></h2>
+				</div>
+				<div id="tabs-details">
+				</div>
+			</div>
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+</body>
+</html>

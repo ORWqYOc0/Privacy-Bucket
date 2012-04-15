@@ -1,0 +1,24 @@
+{
+  "name": "Price of Free (based on Privacy Bucket)",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "See what the third-party web trackers can learn about you",
+  "background": {
+    "scripts": ["trackers.js", "background.js", "network_joined.js"]
+  },
+
+   "content_security_policy": 
+        "default-src 'self' https://ajax.googleapis.com; script-src 'self' https://ajax.googleapis.com; style-src: 'self' 'unsafe-inline'; img-src 'self' http://images.privacychoice.org https://ajax.googleapis.com; font-src 'self'; connect-src *",
+
+  "permissions": [
+    "tabs",
+    "history",
+    "*://*/*"
+  ],
+
+  "browser_action": {
+    "default_icon": "images/icon.jpg", // optional
+    "default_title": "Privacy Bucket",      // optional; shown in tooltip
+    "default_popup": "popup.html"        // optional
+  }
+}
